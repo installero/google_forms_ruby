@@ -1,14 +1,11 @@
 class GoogleFormInput
-  attr_reader :input_type, :label, :name, :value
+  attr_accessor :value
+  attr_reader :input_type, :label, :name
 
   def initialize(input_type, label, name)
     @input_type = input_type
     @label = label
     @name = name
-  end
-
-  def value=(value)
-    @value = value
   end
 
   def to_param
