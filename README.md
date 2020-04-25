@@ -2,6 +2,10 @@
 
 When you need to post something to a Google Form from your ruby script.
 
+# How it works
+
+I got tired of copypasting field names from Google Forms to my code and created a gem that gets the whole Google Form page using `curb` and grabs input names from it using Nokogiri.
+
 # Installation
 
 Add to your `Gemfile`:
