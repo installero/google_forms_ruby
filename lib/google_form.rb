@@ -41,7 +41,7 @@ class GoogleForm
   end
 
   def params_from_inputs
-    inputs.map(&:to_param).reduce({}, :merge)
+    inputs.map(&:to_param).reduce(:merge) || {}
   end
 
   def form_body
